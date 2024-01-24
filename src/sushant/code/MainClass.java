@@ -2,34 +2,28 @@ package sushant.code;
 
 public class MainClass {
     public static void main(String[] args) {
-        Child child = new Child();
+
     }
 
 
 }
 
 class Parent {
-    static
-    {
-        System.out.println("1");
-    }
-    {
-        System.out.println("2");
-    }
-    public Parent() {
-        System.out.println(3);
+    int number;
+    Parent(int i) {
+        number = i;
     }
 }
 
 class Child extends Parent {
-    static
-    {
-        System.out.println("4");
+    int  count;
+    public Child(int count, int num) {
+        super(num);
+        this.count=count;
     }
-    {
-        System.out.println("5");
+
+    Child(int count) {
+        this(count, 0);
     }
-    public Child() {
-        System.out.println(6);
-    }
+
 }

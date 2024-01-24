@@ -10,6 +10,10 @@ public class SortArray {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        int[] testArr = new int[3];
+        testArr[0] = 1;
+        System.out.println("Test array size " + testArr.length);
+        System.out.println("Test Array: " + Arrays.toString(testArr));
         int[] myIntArray = new int[]{1,2,3,4,5};
         List<Integer> myListInt = new ArrayList<>();
 
